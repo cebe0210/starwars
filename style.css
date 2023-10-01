@@ -4,36 +4,84 @@
 }
 body {
     background-image: url(img/background.jpg);
-    font-family: Star-Wars;
+    font-family: 'Star-Wars';
     margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 .intro {
     color: #43a5cf;
-    font-size: 200%;
+    font-size: 300%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: intro 6s linear 2s 1;
     
 }
 .logo {
-    width: 50%;
+    width: 30%;
     height: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: logo 6s linear 8s 1;
+    /*transition: opacity 0.5s ease-in-out;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .prompt {
+    position: relative;
+    font-size: 200%;
+    top: -100px;
+    transform-origin: 50% 100%;
+    opacity: 0;
+    animation: crawl 60s linear 14s 1;
+}
+.crawl {
     color: #ffc31e ;
-    font-size: 200%;    
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    perspective: 400px;
+    font-size: 200%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
     
 }
+@keyframes intro {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% { opacity: 1;
+    }
+
+}
+@keyframes logo {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    100% {opacity: 0;}
+
+}
+
+@keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(20deg) translateZ(0);
+      opacity: 0;
+    }
+    100% { 
+      opacity: 1;
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+
