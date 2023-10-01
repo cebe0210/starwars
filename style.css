@@ -4,5 +4,39 @@
 }
 body {
     background-image: url(img/background.jpg);
+    background-size: cover;
     font-family: Star-Wars;
+    font-size: 200%;
+    
+}
+h1 {
+    color:#43a5cf;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    font-size: 200%;
+}
+.prompt {
+    color:#FFC31E;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.logo img{
+    width: 50%;
+}
+.all {
+    width:33%;
 }
