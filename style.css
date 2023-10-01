@@ -1,3 +1,39 @@
+@font-face {
+    font-family: Star-Wars;
+    src: url(Starjedi.ttf);
+}
 body {
     background-image: url(img/background.jpg);
+    font-family: Star-Wars;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.intro {
+    color: #43a5cf;
+    font-size: 200%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.logo {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.prompt {
+    color: #ffc31e ;
+    font-size: 200%;    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 }
