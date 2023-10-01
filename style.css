@@ -42,6 +42,8 @@ body {
     transform-origin: 50% 100%;
     opacity: 0;
     animation: crawl 60s linear 14s 1;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
 }
 .crawl {
     color: #ffc31e ;
@@ -76,7 +78,7 @@ body {
     0% {
       top: 0;
       transform: rotateX(20deg) translateZ(0);
-      opacity: 0;
+      opacity: 1;
     }
     100% { 
       opacity: 1;
